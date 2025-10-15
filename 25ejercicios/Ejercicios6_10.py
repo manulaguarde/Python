@@ -31,13 +31,12 @@ else:
     """
 
 #7
-"""
 precio=float(input("ingrese el precio para aplicar el iva"))
 
-precioIva= precio*1.21
+precioIva= round(precio*1.21,2) #usamos round() para redondear, espera recibir dos valores: el numero que quiere redondear (multiplicacion) y los decimales
 
 print("el precio con iva es", precioIva)
-"""
+
 
 #8
 """
@@ -48,20 +47,20 @@ print("la cuota total a pagar por mes es ",round(cuota,2), "Euros")
 """
 
 #9
-numAleatorio = random.randint(1,50)
-print(numAleatorio)
+"""numAleatorio = random.randint(1,50)
+print(numAleatorio)"""
 
 #10
-dado1=random.randint(1,6)
+"""dado1=random.randint(1,6)
 dado2=random.randint(1,6)
-print(dado1,dado2)
+print(dado1,dado2)"""
 
 #11
 
-while dado1!=dado2:
+"""while dado1!=dado2:
     dado1 = random.randint(1, 6)
     dado2 = random.randint(1, 6)
-    print(dado1,dado2)
+    print(dado1,dado2)"""
 
 
 

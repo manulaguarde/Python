@@ -21,4 +21,32 @@ Haz introducido el número 34
 1.06
 0.53
 """
+import random
 
+"""#21
+num = int(input("Ingrese un numero: "))
+i=1
+j=1
+for i in range (num,i,-1):
+    if (num%i==0):
+        j+=1
+        #print(i)
+if (j==2):
+    print(num,"es primo")
+else:
+    print(num,"no es primo")"""
+
+#22
+#num = random.randint(10000000,50000000)
+i=1
+num=1
+primo=0
+while(primo!=num):
+    num = random.randint(10, 50)
+    j=0
+    for i in range (1,num):
+        if(num%i==0):
+            j+=1
+    if(j==2):
+        primo=num
+print(num)

@@ -24,13 +24,27 @@ print ("FIN")"""
 
 #3
 
-num = int(input("Introduce un numero "))
-i = num
-resultado=num%i
-for i in range (i,5, resultado):
+num = int(input("Introduce un numero para conocer sus 5 primeros multiplos "))
 
-    if(resultado == 0 ):
-        print (i)
+i=1
+resultado=0
+for i in range (i,6,1):
+    print(resultado)
+    resultado=num*i
+
+
+"""while (num<1):
+    print("El numero tiene que ser mayor que 1")
+    num = int(input("Vuelve a introducir un numero "))
+i = num
+j=0
+while(j<5 and i>=1):
+    if(num%i==0):
+        print(i)
+        j+=1
+    i-=1
+if (j==4 or j==3 or j==2 or j==1 or j==0):
+    print(num," no tiene mas multiplos")"""
 
 
 

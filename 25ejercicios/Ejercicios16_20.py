@@ -44,16 +44,16 @@ while (num!=666):
 print ("Tienes ", dias," días para que alguien te ame antes de que acabe el mundo")
 
 #19
-num = int(input("Ingrese un número mayor que 0: "))
+"""num = int(input("Ingrese un número mayor que 0: "))
 i=num
 for i in range (i, 1, -1):
     if (num%i==0):
-        print (i)
+        print (i)"""
 
 #20
-num1= int(input("Ingrese el primer número"))
-num2= int(input("Ingrese el segundo número"))
-num3= int(input("ingrese el tercer número"))
+num1= int(input("Ingrese el primer número "))
+num2= int(input("Ingrese el segundo número "))
+num3= int(input("ingrese el tercer número "))
 
 """if (num1>num2 and num2>num3):
     print (num1, ", ", num2, ", ", num3)
@@ -69,9 +69,13 @@ else:
     print(num3, ", ", num1, ", ", num2)"""
 
 #probar con min y max
-menor = min (num1,num2,num3)
+menor = min(num1,num2,num3)
 mayor = max(num1,num2,num3)
-medio = 0
+
+
+
+
+print (menor, " ",medio," ",mayor)
 
 
 

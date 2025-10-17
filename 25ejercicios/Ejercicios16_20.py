@@ -68,14 +68,6 @@ elif (num3>num2 and num2>num1):
 else:
     print(num3, ", ", num1, ", ", num2)"""
 
-#probar con min y max
-menor = min(num1,num2,num3)
-mayor = max(num1,num2,num3)
-
-
-
-
-print (menor, " ",medio," ",mayor)
 
 
 

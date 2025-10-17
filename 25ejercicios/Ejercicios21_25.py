@@ -10,7 +10,7 @@
 muestre los primos que hay entre ambos
 
 25. Escribir un programa que reciba por teclado un número y muestre sucesivamente el
-resultado de ir dividiéndolo por dos sucesivamente hasta llegar a un número igual o menor a
+resultado de ir dividiéndolo por dos sucesivamente hasta llegar a un número igual o mayor a
 1. Caso de ser necesario los resultados se mostrarán con dos decimales. Un ejemplo de una
 ejecución correcta después de introducir el número 34 ser´ía esta:
 Haz introducido el número 34
@@ -54,12 +54,44 @@ while(num!=primo):
 print(num)"""
 
 #23
-k=100
-i=1
-j=0
-for i in range (i,k):
-    if(k%i==0):
-        j+=1
-    if(j==2):
-        print(i)
+"""k=1
+while(k<=100):
+    j=0
+    for i in range (1,k+1):
+        if (k % i == 0):
+            j += 1
+    if(j == 2):
+        print(k)
+    k+=1"""
 
+#24
+"""print("Introduce dos números para conocer cuántos números primos hay entre ellos")
+num1=int(input())
+num2=int(input())
+while (num1<=0 or num2<=0):
+    print("los números no pueden ser 0 o negativos, por favor vuelve a ingresar")
+    num1 = int(input())
+    num2 = int(input())
+
+menor=min (num1,num2)
+mayor=max (num1,num2)
+
+while(menor<mayor):
+    j=0
+    for i in range (1,menor+1):
+        if (menor % i == 0):
+            j += 1
+    if(j == 2):
+        print(menor)
+    menor+=1"""
+
+#25
+num=float(input("Escriba un número mayor que 0: "))
+
+while(num<=0):
+    num=float(input("El numero no puede ser 0 o menor, escribalo denuevo: "))
+
+while (num>=1):
+    resultado=num/2
+    print(round(resultado,2))
+    num=resultado

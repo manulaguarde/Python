@@ -59,7 +59,9 @@ else:
     print("el NIF/NIE ingresado es incorrecto")
 """
 """14. Modifica el programa que validaba si un NIF era correcto comprobando si la letra que
-incorpora lo es."""
+incorpora lo es.Para calcular la letra del DNI, debes dividir el número del DNI entre 23
+y tomar el resto de esa división. Luego, busca ese número de resto en la tabla de 
+equivalencia de letras para encontrar la letra correcta"""
 
 nif=input("Introduce su NIF ")
 
@@ -67,22 +69,64 @@ longitud=len(nif)
 numeros = nif[:8]
 letra = nif[8:]
 letraMayus = letra.upper()
+letraCorregida="A"
 if longitud==9:
     if numeros.isdigit()==True:
-        num1=int (numeros[0])
-        num2=int (numeros[1])
-        num3=int (numeros[2])
-        num4=int (numeros[3])
-        num5=int (numeros[4])
-        num6=int (numeros[5])
-        num7=int (numeros[6])
-        num8=int (numeros[7])
-        suma=num1+num2+num3+num4+num5+num6+num7
-        resto=suma%23
-        restoTexto=str (resto)
+        numNif= int (numeros)
+        resto=numNif%23
         if letraMayus.isalpha()==True:
+            match resto:
+                case 0:
+                    letraCorregida="T"
+                case 1:
+                    letraCorregida="R"
+                case 2:
+                    letraCorregida="W"
+                case 3:
+                    letraCorregida="A"
+                case 4:
+                    letraCorregida="G"
+                case 5:
+                    letraCorregida="M"
+                case 6:
+                    letraCorregida="Y"
+                case 7:
+                    letraCorregida="F"
+                case 8:
+                    letraCorregida="P"
+                case 9:
+                    letraCorregida="D"
+                case 10:
+                    letraCorregida="X"
+                case 11:
+                    letraCorregida="B"
+                case 12:
+                    letraCorregida="N"
+                case 13:
+                    letraCorregida="J"
+                case 14:
+                    letraCorregida="Z"
+                case 15:
+                    letraCorregida="S"
+                case 16:
+                    letraCorregida="Q"
+                case 17:
+                    letraCorregida="V"
+                case 18:
+                    letraCorregida="H"
+                case 19:
+                    letraCorregida="L"
+                case 20:
+                    letraCorregida="C"
+                case 21:
+                    letraCorregida="K"
+                case 22:
+                    letraCorregida="E"
 
-            print("el NIF ingresado es correcto")
+            if(letraMayus==letraCorregida):
+                print("el NIF ingresado es correcto")
+            else:
+                print("el NIF ingresado es incorrecto")
         else:
             print("el NIF ingresado es incorrecto")
     else:

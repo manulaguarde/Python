@@ -1,4 +1,4 @@
-opcion = input("Escribe P para jugar, C para configurar, X para salir: ")
+"""opcion = input("Escribe P para jugar, C para configurar, X para salir: ")
 
 #sustituye al if cuando tenemos que comparar varias opciones
 
@@ -12,4 +12,4 @@ match opcion:
     case _:                             #averiguar que hace la barra baja _ ??????????????????????????
         print("No has pulsado una opcion válida")
 
-print("Fin del menú")
+print("Fin del menú")"""

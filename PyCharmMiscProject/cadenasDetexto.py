@@ -26,13 +26,14 @@ print(len(texto)) # "len" me devuelve la longitud de la cadena
 
 for posicion in range (0,len(texto)): #asi puedo ver que posicion tiene cada caracter en la cadena
     print(posicion,"-", texto[posicion])
+"""
 
 valor = 345
 valorTexto = str(valor) #str es una funcion que convierte el objeto "valor" en cadena
 
 print(valorTexto[1]) #puedo controlar mejor ese número, por ejemplo se que un telefono tiene tantos digitos asi puedo corroborar que
                     #para que un dato sea un telefono tenga tantos dígitos
-
+"""
 texto="Hola mundo"
 print(texto.upper()) #el metodo upper convierte todo a mayúsculas. los metodos van despues de la variable y dos parentesis y las funciones antes
 
@@ -43,7 +44,7 @@ print(texto.swapcase())#este metodo cambia mayusculas a minusculas y biseversa, 
 print("Hola a todos los de DAW1".upper()) #el metodo lo puedo poner directamente en la variable
 
 print(texto[1:6].upper())#en este caso me mostrara solo los caracteres entre esos indices pero en mayusculas"""
-
+"""
 texto="Hola mundo"
 
 print(texto.find("la"))#el metodo find, busca si la porcion de texto (en este caso) y muestra cuantas coincidencias hay
@@ -54,4 +55,4 @@ print(texto.find("o",3,8)) #aca busca la "o" pero comienza desde la posicion 3 y
 print(texto.count("o"))#cuenta cuantas "o" aparecen en el texto, si no hay devuelve 0
 
 print(texto.replace("o", "***")) #este metodo remplaza un caracter (en este caso la "o") por lo que pongamos nosotros ("***")
-
+"""

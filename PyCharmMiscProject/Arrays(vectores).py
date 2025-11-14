@@ -14,18 +14,19 @@ print(fichaPersonal[2]) #imprime la edad"""
     print(elemento) #imprime el contenido de cada posicion"""
 
 #POR POSICION Y ELEMENTO (tengo el elemento y la posicion que ocupa en el array
-
-"""for i, elemento in enumerate(fichaPersonal): #utilizo la funcion enumerate para  -- tengo que separar las variables con coma
-    print(i, "-", elemento)"""
-
+"""
+for i, elemento in enumerate(fichaPersonal): #utilizo la funcion enumerate para  -- tengo que separar las variables con coma
+    print(i, "-", elemento)
+"""
 #POR POSICION Y ELEMENTO pero con
-
-"""for i in range(len(fichaPersonal)): #range toma los valores desde el primer valor hasta el ultimo -1 -- es el mas versátil
-    print(i, "-", fichaPersonal[i]) #con range puedo invertir el orden del vector (revisar con cadenas de texto)"""
-
-"""for i in range(len(fichaPersonal)-1,-1,-1): #el ultimo parametro es el paso, incremento o decremento // termina en -1 porque es el valor anterior a 0 (y -1 no esta incluido)
-    print(i, "-", fichaPersonal[i]) #usamos len porque en principio yo no se el tamaño del vector"""
-
+"""
+for i in range(len(fichaPersonal)): #range toma los valores desde el primer valor hasta el ultimo -1 -- es el mas versátil
+    print(i, "-", fichaPersonal[i]) #con range puedo invertir el orden del vector (revisar con cadenas de texto)
+"""
+"""
+for i in range(len(fichaPersonal)-1,-1,-1): #el ultimo parametro es el paso, incremento o decremento // termina en -1 porque es el valor anterior a 0 (y -1 no esta incluido)
+    print(i, "-", fichaPersonal[i]) #usamos len porque en principio yo no se el tamaño del vector
+"""
 """print(fichaPersonal[-1]) #asi me imprime el contenido del ultimo valor de mi array"""
 
 #MODIFICAR EL ARRAY

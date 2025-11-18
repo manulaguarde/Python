@@ -12,7 +12,7 @@ print(texto) #aqui vemos que ya no tiene los corchetes
 
 #SPLIT
 cadena = "En un lugar de la Mancha"
-lista = cadena.split() #por defecto separa por espacios
+lista = cadena.split() #por defecto separa por done hay espacios
 print(lista) #aqui vemos que es una lista
 
 ip= "192.168.5.5"

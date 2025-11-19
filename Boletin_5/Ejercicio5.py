@@ -25,3 +25,15 @@ y como el contador va de uno en uno (para la posición 0 el número que evalúa 
 para la posición 1 el número que evalúa es el 2) coincide con el número más repetido. 
 Y lo que hace dentro (lo que almacena en la posición) es contar el número de
 veces que se repite"""
+
+#MIRARLO CON ESTE METODO
+
+lista=[1,4,5,6,33,4,22,45,2,4]
+mayor =-1
+numeroMayor=0
+for numero in lista:
+    if lista.count(numero)>mayor:
+        mayor= lista.count(numero)
+        numeroMayor=numero
+
+print("El mayor es",numeroMayor,"y se repite",mayor,"veces.")

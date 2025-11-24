@@ -4,9 +4,6 @@ tendrá 5 minas que se colocaran de forma aleatoria en cinco posiciones del arra
 minas se representarán con un 1 y las posiciones sin mina con un 0."""
 
 import random
-from traceback import print_tb
-
-TAMANIO=5
 
 tablero=[]
 

@@ -5,7 +5,7 @@ repite (y nos diga cuantas veces lo hace).
 import random
 
 numAleatorios=[random.randint(1,50) for _ in range(0,100)]
-
+"""
 print("El número mayor es: ",max(numAleatorios))
 print("El número menor es: ",min(numAleatorios))
 
@@ -18,7 +18,7 @@ for i in range(1,51): #el número maximo que puede contener el array es 50 por l
 #con index separo dentro del array la posicion mas alta, con mayores repeticiones
 numeroMasRepetido=contador.index(max(contador))+1 #el número mas repetido se encuentra en el valor mayor del contador
 print("El número que más se repite es: ",numeroMasRepetido, " y se repite ",max(contador), " veces")
-
+"""
 """con index separo dentro del array la posición más alta, con mayores repeticiones.
 numeroMasRepetido pasa a ser la posición del contador, pero al sumarle 1
 y como el contador va de uno en uno (para la posición 0 el número que evalúa es el 1
@@ -28,7 +28,7 @@ veces que se repite"""
 
 #MIRARLO CON ESTE METODO
 
-lista=[1,4,5,6,33,4,22,45,2,4]
+lista=[1,4,5,6,33,4,22,45,2,4,7]
 mayor =-1
 numeroMayor=0
 for numero in lista:

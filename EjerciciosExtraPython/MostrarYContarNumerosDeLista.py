@@ -17,3 +17,4 @@ for i in range(0,len(numerosRepetidos)):
         print(numerosRepetidos[i], " se repite ", contador[i]," vez")
     elif contador[i]>1:
         print(numerosRepetidos[i], " se repite ", contador[i]," veces")
+

@@ -16,31 +16,33 @@ también correctamente en estos casos
 Se valorará si haces el desarrollo de forma modular usando una función que reciba un entero y
 devuelva la línea correspondiente. Eso permitiría en un futuro modificar el método de cifrado
 fácilmente"""
-from importlib.metadata import requires
 
-pin=int(input("Introduce tu pin: "))
+pin=int(input("Introduce tu pin (máximo 4 dígitos): "))
+while len(str(pin)) > 4:
+    pin=int(input("Introduce tu pin (máximo 4 dígitos): "))
 
-
-
+lista=[]
 def cifrarlinea(num):
-    for i in range(4):
-        lista=[]
-        fila=""
-        for i in range(10):
-            if i==int(num):
-                fila+="0"
-            else:
-                fila+="X"
-        lista.append(fila)
+    fila = ""
+    for i in range(1,11):
+        if i==int(num):
+            fila+="0"
+        elif i==10 and int(num)==0:
+            fila+="0"
+        else:
+            fila+="X"
+    lista.append(fila)
     return lista
 
 def cifrarpin(pin):
     pinTexto=str(pin)
+    while len(pinTexto)<4:
+        pinTexto="0"+pinTexto
     for num in pinTexto:
         cifrarlinea(num)
 
-resultado=cifrarpin(pin)
+cifrarpin(pin)
 
-for linea in resultado:
-    print(linea)
+for fila in lista:
+    print(fila)
 

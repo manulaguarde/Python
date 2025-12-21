@@ -19,12 +19,34 @@ argumento. El valor en binario se devuelve (y no se imprime desde dentro de la f
 (si no los ceros a la izquierda desaparecerían) y como un octeto completo. Si lo que se recibe no es
 válido (un string, un número decimal, negativo o superior a 255) tu función devolverá un -1"""
 
-numDecimal=input("Ingresa un número positivo menor o igual a 255")
+numDecimal=input("Ingresa un número positivo menor o igual a 255: ")
 
-def toBinario(num):
-    
+def toBinario(numDecimal):
+    if not compruebaNum(numDecimal):
+        return -1
+    else:
+        pos=128
+        numBinario=""
+        i=0
+        numEntero=int(numDecimal)
+        while i<8:
+            if numEntero>=pos:
+                numEntero=numEntero-pos
+                numBinario+="1"
+                pos=pos//2
+            elif numEntero<pos:
+                pos=pos//2
+                numBinario+="0"
+            i+=1
+        return numBinario
 
-"""def compruebaNum(num):"""
+def compruebaNum(num):
+    for n in num:
+        if not num.isdigit():
+            return False
+    #numEntero=int(num)
+    if 0<int(num)>255:
+        return False
+    return True
 
-
-toBinario(numDecimal)
+print(toBinario(numDecimal))

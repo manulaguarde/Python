@@ -64,7 +64,7 @@ def batalla():
     if ganoPartidaUsuario(ganoUsuario,empate) :
         print("El usuario gana!")
     elif ganoPartidaOrdenador(ganoOrdenador,empate):
-        print("El usuario gana!")
+        print("El ordenador gana!")
     else:
         print("Hay empate!")
 

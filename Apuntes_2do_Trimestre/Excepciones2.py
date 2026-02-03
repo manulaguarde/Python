@@ -11,11 +11,13 @@ esCorrecto=False
 
 print(sueldo)"""
 
-try:
-    while not esCorrecto:
+while True:
+    try:
         entrada=input("Introduce tu sueldo")
         sueldo=float(entrada)
-        esCorrecto=True
-except ValueError:
-    print("Sueldo ingresado no valido, vuelve a ingresar")
+        break
+    except ValueError:
+        print("Sueldo ingresado no valido, vuelve a ingresar")
+
+print(sueldo)
 

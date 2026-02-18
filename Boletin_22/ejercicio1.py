@@ -6,7 +6,7 @@ liga=[["Real Betis CF",0,0,0,0,0,0,0],
       ["Sevilla",0,0,0,0,0,0,0],
       ["Barcelona FC",0,0,0,0,0,0,0],
       ["Rayo Vallecano",0,0,0,0,0,0,0],
-      ["Real Madrid FC",0,0,0,0,0,0,0],]
+      ["Real Madrid FC",0,0,0,0,0,0,0]]
 
 
 def partidosJugados(equipo1,equipo2):

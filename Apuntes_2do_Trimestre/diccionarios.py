@@ -110,9 +110,9 @@ liga.update(supercopa)
 print(liga)
 
 #puedo tambien copiar el diccionario para luego modificar el nuevo y mantener el diccionario anterior con los valores anteriores
-nuevaliga=liga.copy()
+nuevaLiga=liga.copy()
 
-nuevaliga.update(supercopa)
+nuevaLiga.update(supercopa)
 print(supercopa)
 print(nuevaLiga)
 

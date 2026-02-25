@@ -11,6 +11,12 @@ liga={"Real Betis CF":[0,0,0,0,0,0,0],
 equipos=list(liga.keys())
 
 def resultadosPartido(equipo, golesAFavor, golesEnContra):
+    #forma del profe
+    """resultados=liga[equipo]
+    resultados[5]+=golesAFavor
+    resultados[6]+=golesEnContra
+    liga[equipo]=resultados"""
+    #mi forma
     liga[equipo][5]=golesAFavor
     liga[equipo][6]=golesEnContra
     liga[equipo][1]+=1
@@ -32,6 +38,9 @@ def equiposDelPartido(equipo1,equipo2,golesLocal,golesVisitante):
             equipoLocal=equipo
         elif equipo2==equipo:
             equipoVisitante=equipo
+    #equipoLocal=liga.get(equipo1) #asi puedo obtener los valores
+    #equipoVisitante=liga.get(equipo2) #asi puedo obtener los valores
+
 
     resultadosPartido(equipoLocal,golesLocal,golesVisitante)
     resultadosPartido(equipoVisitante,golesVisitante,golesLocal)
@@ -46,6 +55,9 @@ def verClasificacion(liga):
     print("-----------------------------------------------------------------")
     for equipo, valores in liga.items():
         print(f"{equipo:<25}|{valores[0]:>5}|{valores[1]:>4}|{valores[2]:>4}|{valores[3]:>4}|{valores[4]:>4}|{valores[5]:>4}|{valores[6]:>4}")
+    #forma del profe
+    """for equipo in liga:
+        stats=liga.get(equipo)"""
 
 
 equipo1=equipos[random.randint(0,len(equipos)-1)]

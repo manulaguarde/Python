@@ -70,3 +70,4 @@ goles2=random.randint(0,5)
 equiposDelPartido(equipo1,equipo2,goles1,goles2)
 
 verClasificacion(liga)
+

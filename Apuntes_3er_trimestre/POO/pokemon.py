@@ -12,6 +12,7 @@ class Pokemon:
         self.__tipos=tipo
         Pokemon.numPokemon+=1
 
+
     @property
     def nombre(self):
         return self.__pokemon_nombre

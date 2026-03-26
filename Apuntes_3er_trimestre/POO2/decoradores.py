@@ -20,12 +20,15 @@ class Profesor(Persona, Funcionario):
     def __str__(self):
         return self._apellido + ", "+ self._nombre+"("+self._cuerpo+")"
 
-    #Paso 2: tengo que crear una función que se llame igual que el decorador que creamos y le pasamos como argumento otra función
+    #Paso 2: tengo que crear una función que se llame igual que el decorador que creamos y le pasamos como argumento otra función, y devuelve una funcion
+    #recibe como argumento la funcion que aparece debajo del decorador. (funcion=saludo)
+
     def mi_decorador(funcion):
-        def envoltorio():
-            print("Buenos días")
-            funcion()
-            print("Que tengas un buen día")
+        #aqui dentro hacemos la otra funcion que tiene que devolver
+        def envoltorio(self):
+            print("Buenos días cuerpo de",self._cuerpo) #esto es la decoración, es opcional
+            funcion(self) #el momento que queremos que se ejecute nuestra función
+            print("Que tengas un buen día") #otra decoración
             
         return envoltorio
 

@@ -23,6 +23,8 @@ examen=Examen(numPreguntas)
 #examen.seleccionarPreguntas(2)
 examen.mostrarPreguntas()
 respuestas=[]
-for i in range(numPreguntas):
+"""for i in range(numPreguntas):
     #print(f"Respuesta a la pregunta {i+1}:")
-    examen.setRespuestasUsuario(input(f"Respuesta a la pregunta {i+1}"))
+    examen.setRespuestasUsuario(input(f"Respuesta a la pregunta {i+1}"))"""
+
+examen.mostrarSolucion()

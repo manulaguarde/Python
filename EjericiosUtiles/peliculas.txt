@@ -1,0 +1,7 @@
+1;The Matrix;Accion;8.7
+2;Titanic;Drama;7.8
+3;Avatar;Ciencia Ficcion;7.9
+4;John Wick;Accion;7.4
+5;Interstellar;Ciencia Ficcion;8.6
+6;Gladiator;Accion;8.5
+7;El Diario de Noa;Drama;7.9

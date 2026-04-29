@@ -1,0 +1,4 @@
+Ana;23;Madrid
+Juan;30;Sevilla
+Maria;22;Madrid
+Pedro;35;Valencia

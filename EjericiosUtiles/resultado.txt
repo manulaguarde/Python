@@ -1,0 +1,6 @@
+python: 2
+es: 3
+genial: 1
+java: 1
+potente: 1
+facil: 1

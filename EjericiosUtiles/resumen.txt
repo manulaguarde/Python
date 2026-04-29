@@ -1,0 +1,4 @@
+Número total de películas: 7
+Mejor película: The Matrix
+Peor película: John Wick
+Nota media global: 8.11

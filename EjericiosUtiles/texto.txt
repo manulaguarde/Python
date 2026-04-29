@@ -1,0 +1,3 @@
+python es genial
+java es potente
+python es facil

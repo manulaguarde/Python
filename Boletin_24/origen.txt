@@ -1,0 +1,9 @@
+Imedio, Demetrio;Programador Categoría 2;1599.56
+Borriquero, Luis Ricardo;Analista;1341.60
+Lorin, Francisco;Administrativo;1095
+Cortada del Rosal, Rosa;Administrador de bases de datos;2256.99
+Gonzales Pedro;Administrador;235.5
+Fernandez, Raquel, Consultora, 123
+Ramirez, Ignacio;Analista;123a
+Olga, Olga; Recursos Humanos Categoría 2; 123.59
+Rey, Manuel;Programador Categoría 1;2000

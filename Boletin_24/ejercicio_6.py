@@ -1,9 +1,8 @@
 soluciones=[]
-respuesta=[]
 respuestas=[]
-diccionario={}
+alumnos=[]
 try:
-    with open("/home/alumno/ejercicio6Python_ficheros/soluciones.txt","rt") as cursor:
+    with open("C:/ProyectosGit/EjerciciosPython/Boletin_24/soluciones.txt","rt") as cursor:
         contenido=cursor.read()
         contenido=contenido.replace("\n","")
         soluciones=contenido.split(", ")
@@ -13,26 +12,33 @@ except:
     print("Fichero no encontrado")
 
 try:
-    with open("/home/alumno/ejercicio6Python_ficheros/respuestas.txt","rt") as cursor:
+    with open("C:/ProyectosGit/EjerciciosPython/Boletin_24/respuestas.txt","rt") as cursor:
         for linea in cursor:
             linea=linea.replace("\n","")
-            respuesta=linea.split(": ")
-            letra=respuesta[1].split(", ")
-            #print(letra)
-            #print(respuesta)
-            respuestas.append(respuesta)
-            diccionario[respuesta[0]]=respuesta[1]
+            lista_linea=linea.split(": ")
+            alumnos.append(lista_linea[0])
+            letra=lista_linea[1].split(", ")
+            respuestas.append(letra)
+
 except:
     print("Fichero no encontrado")
 
-#print(respuestas)
-print(diccionario)
+
+notas=[]
+for respuesta in respuestas:
+    aciertos=0
+    errores=0
+    for i in range (len(respuesta)):
+        print(respuesta[i], soluciones[i])
+        if respuesta[i] == soluciones[i]:
+            aciertos+=1
+        else:
+            errores+=0.30
+    notas.append(aciertos-errores)
 
 try:
-    with open("/home/alumno/ejercicio6Python_ficheros/notas.txt","wt") as cursor:
-        aciertos=0
-        errores=0
-        
-
+    with open("C:/ProyectosGit/EjerciciosPython/Boletin_24/notas.txt","at") as cursor:
+        for i in range (len(notas)):
+            cursor.write(f"{alumnos[i]}: {notas[i]}\n")
 except:
     print("Hubo un problema al intentar escribir el fichero")
